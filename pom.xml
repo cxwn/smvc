@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>smvc-servlet</module>
+        <module>smvc-hellomvc</module>
+        <module>smvc-annotation</module>
     </modules>
 
     <properties>
@@ -42,8 +44,8 @@
         <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.3</version>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2.1-b03</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
