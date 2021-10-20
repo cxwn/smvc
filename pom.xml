@@ -12,6 +12,9 @@
         <module>smvc-servlet</module>
         <module>smvc-hellomvc</module>
         <module>smvc-annotation</module>
+        <module>smvc-start</module>
+        <module>smvc-aop</module>
+        <module>smvc-smart</module>
     </modules>
 
     <properties>
@@ -52,6 +55,19 @@
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- jstl-api -->
+        <dependency>
+            <groupId>javax.servlet.jsp.jstl</groupId>
+            <artifactId>jstl-api</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!-- jstl-impl -->
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jstl-impl</artifactId>
             <version>1.2</version>
         </dependency>
 
