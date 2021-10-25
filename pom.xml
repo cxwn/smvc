@@ -14,7 +14,7 @@
         <module>smvc-annotation</module>
         <module>smvc-start</module>
         <module>smvc-aop</module>
-        <module>smvc-smart</module>
+        <module>smvc-controller</module>
     </modules>
 
     <properties>
