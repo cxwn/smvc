@@ -15,6 +15,7 @@
         <module>smvc-start</module>
         <module>smvc-aop</module>
         <module>smvc-controller</module>
+        <module>smvc-lab</module>
     </modules>
 
     <properties>
