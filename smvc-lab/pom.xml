@@ -15,7 +15,52 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>5.3.10</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.10</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>5.3.10</version>
+        </dependency>
+
+
+    </dependencies>
+
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.27.v20190418</version>
+                <configuration>
+                    <httpConnector>
+                        <port>8080</port>
+                    </httpConnector>
+                    <scanIntervalSeconds>-1</scanIntervalSeconds>
+                    <reload>manual</reload>
+                    <useTestScope>true</useTestScope>
+                    <webAppConfig>
+                        <resourceBase>src/test/webjar-debug/META-INF/resources</resourceBase>
+                        <resourceBase>${project.basedir}/src/main/resources</resourceBase>
+                    </webAppConfig>
+                </configuration>
+            </plugin>
+        </plugins>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
